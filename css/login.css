@@ -1,0 +1,243 @@
+/* =========================
+   Color Variables
+========================= */
+:root {
+    --main-color: #5c74ff;
+    --orange-btn-color: #ff7a00;
+    --navbar-toggler-color: #c870ff;
+    --badge-text-color: #4155a3;
+    --badge-text-light: #8f96ff;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Arial", sans-serif;
+}
+
+/* =========================
+   Loader Styles
+========================= */
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#loader.hidden {
+    opacity: 0;
+    display: none;
+}
+
+/* Spinner wrapper */
+.spinner {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Circular spinner */
+.spinner-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #007bff;
+    border-radius: 50%;
+    animation: spin 3s linear infinite;
+}
+
+/* Logo inside spinner */
+.spinner img {
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+}
+
+/* Rotation animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* =========================
+   Landing Section
+========================= */
+#landing-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Background video */
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+/* Dark overlay on video */
+.video-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(3, 12, 20, 0.3);
+    z-index: -1;
+}
+
+/* =========================
+   Form Section
+========================= */
+.form-section {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+/* Card container */
+.login-card {
+    width: min(420px, 86%);
+    background: rgba(20, 30, 36, 0.45);
+    color: #fff;
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: 0 12px 30px rgba(2, 8, 15, 0.55);
+    backdrop-filter: blur(8px) saturate(130%);
+    -webkit-backdrop-filter: blur(8px) saturate(130%);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Logo bubble */
+.logo-wrap {
+    height: 100px;
+    width: 100px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 160px;
+}
+
+.logo-wrap .logo-img {
+    height: 90%;
+    width: 90%;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.logo-wrap img {
+    width: 70%;
+    border-radius: 50%;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.06);
+}
+
+/* Card heading */
+.login-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 2.3rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+/* =========================
+   Form Controls
+========================= */
+.form-control {
+    background: transparent;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 0;
+    padding: 10px 8px;
+    box-shadow: none;
+}
+
+.form-control::placeholder {
+    color: white;
+}
+
+.form-label {
+    color: white;
+    font-size: 1.1rem;
+}
+
+/* =========================
+   Buttons & Links
+========================= */
+.btn-cta {
+    background: #ffffff;
+    color: #0b0b0b;
+    border-radius: 28px;
+    padding: 10px 16px;
+    font-weight: 600;
+    border: none;
+    transition: transform .12s ease, background .12s ease;
+}
+
+.btn-cta:hover {
+    transform: translateY(-2px);
+    background: #f1f1f1;
+    color: #000;
+}
+
+.links .link {
+    text-align: start;
+    display: block;
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.links .link:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   Responsive Adjustments
+========================= */
+@media (max-width: 480px) {
+    .login-card {
+        padding: 20px;
+        width: 92%;
+    }
+
+    .login-title {
+        font-size: 1.45rem;
+    }
+
+    .form-label {
+        font-size: 0.9rem;
+    }
+
+    .btn-cta {
+        padding: 10px;
+    }
+}

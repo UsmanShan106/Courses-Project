@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=La+Belle+Aurore&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/login.css" />
+
+    <link rel="shortcut icon" href="img/loader.png" type="image/x-icon" />
+    <title>App Landing</title>
+  </head>
+  <body>
+    <!-- Page loader -->
+    <div id="loader">
+      <div class="spinner">
+        <div class="spinner-border"></div>
+        <img src="img/loader.png" alt="Loading..." />
+      </div>
+    </div>
+
+    <!-- Registration Section -->
+    <section id="landing-section">
+      <!-- Background video -->
+      <video autoplay muted loop playsinline id="bg-video">
+        <source src="img/bg-video.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+
+      <!-- Overlay -->
+      <div class="video-overlay"></div>
+
+      <!-- Registration card -->
+      <div class="form-section">
+        <div class="login-card">
+          <!-- Logo -->
+          <div class="logo-wrap d-flex justify-content-center align-items-center p-1">
+            <div class="logo-img d-flex justify-content-center align-items-center">
+              <img src="img/loader.png" alt="Logo" />
+            </div>
+          </div>
+
+          <h3 class="login-title text-center mb-4">Registration Here</h3>
+
+          <form role="form" aria-label="Registration form">
+            <div class="mb-2">
+              <label for="name" class="form-label text-muted">Full Name</label>
+              <input
+                id="name"
+                type="text"
+                class="form-control"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+
+            <div class="mb-2">
+              <label for="email" class="form-label text-muted">Email</label>
+              <input
+                id="email"
+                type="email"
+                class="form-control"
+                placeholder="Email"
+                required
+              />
+            </div>
+
+            <div class="mb-2">
+              <label for="password" class="form-label text-muted">Password</label>
+              <input
+                id="password"
+                type="password"
+                class="form-control"
+                placeholder="Password"
+                required
+              />
+            </div>
+
+            <div class="mb-2">
+              <label for="Cpassword" class="form-label text-muted">Confirm Password</label>
+              <input
+                id="Cpassword"
+                type="password"
+                class="form-control"
+                placeholder="Confirm Password"
+                required
+              />
+            </div>
+
+            <button type="submit" class="btn btn-cta w-100 mb-2">Register</button>
+
+            <div class="text-center small links mt-3">
+              <a href="login.html" class="link">Login</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>
