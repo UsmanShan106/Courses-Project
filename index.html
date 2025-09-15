@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=La+Belle+Aurore&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- GLightbox (used for video popups) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+    <!-- Swiper (for carousels/sliders) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/loader.png" type="image/x-icon">
+
+    <title>Courses | Education</title>
+  </head>
+  <body>
+    <!-- Loader Screen -->
+    <div id="loader">
+      <div class="spinner">
+        <div class="spinner-border"></div>
+        <img src="img/loader.png" alt="Loading..." />
+      </div>
+    </div>
+
+    <!-- Landing Page Wrapper -->
+    <section>
+      <div class="landing-page">
+      <header>
+        <div class="container-fluid">
+          <div class="row p-1">
+
+            <!-- Logo -->
+            <div
+              class="logo-section col-lg-2 col-md-3 col-4 d-flex justify-content-end align-items-center"
+            >
+              <a href="index.html"><img src="img/logo.png" alt="Logo" /></a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <div class="menu-section col-lg-10 col-md-9 col-8">
+              <nav class="navbar navbar-expand-lg d-flex justify-content-end">
+                <!-- Mobile menu button -->
+                <button
+                  class="navbar-toggler text-light"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#mobileMenu"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Desktop Menu -->
+                <div class="collapse navbar-collapse">
+                  <ul
+                    class="nav d-flex justify-content-end align-items-center w-100"
+                  >
+                    <li class="nav-item m-1"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item m-1"><a href="#" class="nav-link">Courses</a></li>
+                    <li class="nav-item m-1"><a href="#" class="nav-link">Blog</a></li>
+                    <li class="nav-item m-1"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item m-1"><a href="#" class="nav-link">Contact</a></li>
+                    <li class="nav-item m-3"><button class="joinbtn btn nav-item">Join</button></li>
+                    <button onclick="window.location.href = 'login.html'" class="logInbtn m-3 btn nav-item">Log in</button>
+                  </ul>
+                </div>
+              </nav>
+
+              <!-- Mobile Offcanvas Menu -->
+              <div
+                class="offcanvas offcanvas-top mobile-menu-offcanvas"
+                tabindex="-1"
+                id="mobileMenu"
+              >
+                <div class="offcanvas-header">
+                  <a href="index.html"><img src="img/logo.png" alt="Logo" /></a>
+                  <button
+                    type="button"
+                    class="btn-close text-reset"
+                    data-bs-dismiss="offcanvas"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul
+                    class="nav d-flex justify-content-end align-items-center w-100"
+                  >
+                    <li class="nav-item m-1"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item m-1"><a href="#" class="nav-link">Courses</a></li>
+                    <li class="nav-item m-1"><a href="#" class="nav-link">Blog</a></li>
+                    <li class="nav-item m-1"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item m-1"><a href="#" class="nav-link">Contact</a></li>
+                    <li class="nav-item m-3"><button onclick="window.location.href = 'pages/register.html'" class="joinbtn btn nav-item">Join</button></li>
+                    <button  onclick="window.location.href = 'pages/login.html'" class="logInbtn m-3 btn nav-item">Log in</button>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <main>
+        <section class="container text-light d-flex">
+          <div class="row">
+            <div class="hero-section col-12">
+              <h1>
+                Online learning <br />
+                platform
+              </h1>
+              <p>
+                Build skills with courses, certificates, and degrees online from
+                <br />
+                world-class universities and companies
+              </p>
+              <button class="btn joinbtn">Join for free</button>
+            </div>
+          </div>
+        </section>
+    </div>
+    </section>
+
+    <!-- Badges / Features Section -->
+    <section id="badges">
+      <div class="container badge-section">
+        <div class="row g-4">
+          <!-- Feature 1 -->
+          <div class="col-xl-4 col-lg-6 col-12">
+            <div class="badges">
+              <div class="row g-2">
+                <div class="col-3"><img src="/img/icon1.svg" alt="" /></div>
+                <div class="col-9">
+                  <h3>60+ UX Courses</h3>
+                  <p>The automated process all your website tasks.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Feature 2 -->
+          <div class="col-xl-4 col-lg-6 col-12">
+            <div class="badges">
+              <div class="row">
+                <div class="col-3"><img src="/img/icon2.svg" alt="" /></div>
+                <div class="col-9">
+                  <h3>Expert Instructors</h3>
+                  <p>The automated process all your website tasks.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Feature 3 -->
+          <div class="col-xl-4 col-lg-6 col-12 mx-md-auto">
+            <div class="badges">
+              <div class="row g-2">
+                <div class="col-3"><img src="/img/icon3.svg" alt="" /></div>
+                <div class="col-9">
+                  <h3>Life Time access</h3>
+                  <p>The automated process all your website tasks.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Courses Section -->
+    <section id="featured-courses">
+      <div class="container courses-section">
+        <div class="row">
+          <h1 class="courses-header text-center">Our featured Courses</h1>
+        </div>
+        <div class="row coures-body mt-5">
+          <!-- Swiper Slider for Courses -->
+          <div class="swiper courses-swiper">
+            <div class="swiper-wrapper">
+              <!-- Single Course Card -->
+              <div class="swiper-slide">
+                <div class="courses-card mx-3">
+                  <div class="courses-card-img">
+                    <img src="/img/featured1.png" alt="" />
+                  </div>
+                  <div class="courses-card-body mt-3">
+                    <div class="courses-card-subtitle">User Experience</div>
+                    <div class="courses-card-title">
+                      Fundamental of UX for Mobile App Design
+                    </div>
+                    <div class="courses-card-text">
+                      The automated process all your website need...
+                    </div>
+                    <div class="ratings">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                      <i class="fas fa-star-half"></i>
+                    </div>
+                    <div class="courses-card-text">
+                      <span class="golden-text">(4.5)</span> Based on 120 Reviews
+                      <span class="float-end courses-card-title my-0">$135</span>
+                    </div>
+                    <div>
+                      <button
+                        onclick="location.reload();"
+                        class="courses-button btn btn-outline-primary mt-3 w-100 p-2"
+                      >
+                        Find out More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- More slides here... -->
+            </div>
+            <!-- Swiper navigation controls -->
+            <div class="swiper-button-next ms-5"></div>
+            <div class="swiper-button-prev me-5"></div>
+            <div class="swiper-pagination mt-5"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-area mt-3">
+      <div class="container">
+        <div class="row">
+          <!-- Image and Text -->
+          <div class="col-lg-6 col-12">
+            <div class="about-img-section mb-3">
+              <img src="img/about.svg" alt="About Area Image" />
+            </div>
+            <div class="mb-2 about-header">
+              <h2>Learn new Skills with our <br />top educators.</h2>
+              <p class="my-5">
+                The automated process all your website tasks...
+              </p>
+            </div>
+            <p class="about-points"><img src="img/right-icon.svg" alt="" /> Techniques to engage effectively...</p>
+            <p class="about-points"><img src="img/right-icon.svg" alt="" /> Join millions of people...</p>
+            <p class="about-points"><img src="img/right-icon.svg" alt="" /> Online learning is as easy and natural.</p>
+          </div>
+
+          <!-- Video Button -->
+          <div class="col-lg-6 col-12 about-video-section d-flex justify-content-center align-items-center">
+            <div class="about-video">
+              <a href="https://www.youtube.com/watch?v=668nUCeBHyY" class="glightbox">
+                <i class="fas fa-play"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subjects Section -->
+    <section class="subjects-area mt-5">
+      <div class="container">
+        <div class="row"><div class="col-12"><h1 class="subject-heading">Explore top subjects</h1></div></div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-12 subject-card"><img src="img/topic1.png" alt=""><h3><a href="#">Programming</a></h3></div>
+          <!-- repeat subject cards -->
+        </div>
+      </div>
+    </section>
+
+    <!-- About Area 3 -->
+    <section id="about-area-3">
+      <div class="container">
+        <div class="row g-5">
+          <div class="about-area-3-left col-lg-6 ms-0">
+            <img src="img/about3.png" alt="About Area 3 Image" class="w-100">
+          </div>
+          <div class="about-area-3-right col-lg-6">
+            <div class="mb-2 about-header">
+              <h2>Learner outcomes on <br />courses you will take.</h2>
+              <p class="my-5">The automated process all your website tasks...</p>
+            </div>
+            <p class="about-points"><img src="img/right-icon.svg" alt="" /> Techniques to engage effectively...</p>
+            <p class="about-points"><img src="img/right-icon.svg" alt="" /> Join millions of people learning together.</p>
+            <p class="about-points"><img src="img/right-icon.svg" alt="" /> Online learning is as easy and natural.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experts Section -->
+    <section id="experts-section">
+      <div class="container">
+        <div class="row"><div class="col-12"><h3 class="experts-section-heading text-center">Community Experts</h3></div></div>
+        <div class="row">
+          <div class="swiper experts-swiper">
+            <div class="swiper-wrapper">
+              <!-- Team cards -->
+              <div class="swiper-slide">
+                <div class="expert-card d-flex align-items-center justify-content-center flex-column">
+                  <img src="img/team1.png" alt="Team Member 1">
+                  <h3>Mr. Uttam</h3>
+                  <p>The automated process for all<br/> your website tasks.</p>
+                </div>
+              </div>
+              <!-- repeat team cards -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About 2 Section -->
+    <section id="about-2-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 about2-left">
+            <img src="img/about2.png" alt="About 2 Image" class="w-100">
+          </div>
+          <div class="col-lg-6 p-5 about2-right d-flex flex-column justify-content-center">
+            <h3>Take the next step toward your personal and professional goals with us.</h3>
+            <p>The automated process all your website tasks...</p>
+            <button>Join for free</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer-section">
+    <div class="container">
+      <div class="row">
+        <!-- Footer Column 1 -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <a href="index.html"><img src="img/logo2_footer.png" alt=""></a>
+          <p class="mt-5">The automated process starts as soon as your clothes go into the machine.</p>
+          <div class="mt-5 connection-icons">
+            <i class="fas fa-twitter"></i>
+            <i class="fas fa-facebook"></i>
+            <i class="fas fa-whatsapp"></i>
+          </div>
+        </div>
+        <!-- Footer Columns 2,3,4 -->
+        <div class="col-xl-3 col-lg-4 col-md-6 ps-5">
+          <div class="footer-text1">Our Solutions</div>
+          <div class="mt-5">
+            <p><a href="index.html" class="footer-link">Design & Creatives</a></p>
+            <!-- repeat links -->
+          </div>
+        </div>
+        <!-- ...repeat footer columns -->
+      </div>
+      <div class="row footer-foot">
+        <p class="text-center">
+          Copyright ©2025 All rights reserved | Made with <span><i class="fas fa-heart"></i></span> 
+          by Colorlib
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
